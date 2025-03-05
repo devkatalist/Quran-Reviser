@@ -1,10 +1,14 @@
-﻿let ayahsIndex = 0;
-let ispageHidden = true;
+﻿//This is to be changed for every page
 const maxAyahs = 10;
 
+let ayahsIndex = 0;
+let ispageHidden = true;
+
 document.addEventListener('keydown', function (event) {
+
     const ayahDivs = document.querySelectorAll('div[class*="ayah"]');
 
+    //Delete resets progress
     if (event.key === 'Delete') {
         ayahDivs.forEach(function (div) {
             div.style.backgroundColor = '#ffffff';
@@ -13,6 +17,7 @@ document.addEventListener('keydown', function (event) {
         });
     }
 
+    //Spacebar reveals page
     if (event.key === ' ') {
         event.preventDefault();
         ayahDivs.forEach(function (div) {
@@ -20,37 +25,35 @@ document.addEventListener('keydown', function (event) {
             ayahsIndex = maxAyahs;
             ispageHidden = false;
         });
+    }    
+
+    if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        if (ayahsIndex <= maxAyahs - 1 || !ispageHidden) {
+            ayahsIndex++;
+            const className = `.ayah${String(ayahsIndex).padStart(3, '0')}`;
+
+            const targetDivs = document.querySelectorAll(className);
+            console.log('action', ayahsIndex, targetDivs);
+
+            targetDivs.forEach(element => {
+                element.style.backgroundColor = 'transparent';
+            });
+        }
     }
-
-    if (ispageHidden) {
-        if (event.key === 'ArrowDown') {
-            event.preventDefault();
-            if (ayahsIndex <= maxAyahs - 1) {
-                ayahsIndex++;
-                const className = `.ayah${String(ayahsIndex).padStart(3, '0')}`;
-
-                const targetDivs = document.querySelectorAll(className);
-                console.log('action', ayahsIndex, targetDivs);
-
+    if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        console.log('index is ', ayahsIndex)
+        if (ayahsIndex > 0) {
+            const className = `.ayah${String(ayahsIndex).padStart(3, '0')}`;
+            const targetDivs = document.querySelectorAll(className);
+            if (targetDivs) {
                 targetDivs.forEach(element => {
-                    element.style.backgroundColor = 'transparent';
+                    element.style.backgroundColor = '#ffffff';
                 });
             }
-        }
-
-        if (event.key === 'ArrowUp') {
-            event.preventDefault();
-            console.log('index is ', ayahsIndex)
-            if (ayahsIndex > 0) {
-                const className = `.ayah${String(ayahsIndex).padStart(3, '0')}`;
-                const targetDivs = document.querySelectorAll(className);
-                if (targetDivs) {
-                    targetDivs.forEach(element => {
-                        element.style.backgroundColor = '#ffffff';
-                    });
-                }
-                ayahsIndex--;
-            }
+            ayahsIndex--;
         }
     }
+
 });
