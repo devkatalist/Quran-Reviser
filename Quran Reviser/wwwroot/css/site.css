@@ -20,19 +20,3 @@ html {
 body {
     background-color: #fffbdd;
 }
-
-img {
-    
-    height: 700px;
-    object-fit: cover;
-    display: block;
-    transform:scale(1.15)
-
-    
-}
-.imageDiv {
-    overflow:hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

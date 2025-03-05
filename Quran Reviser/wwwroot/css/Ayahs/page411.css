@@ -1,0 +1,195 @@
+.overlay {
+    direction:rtl;
+    position: absolute;
+    
+    opacity:0.5;
+    width: auto;
+    top: 16.1%;
+    bottom: -1.8%;
+    left: 4%;
+    right: 4%;
+    z-index: 1;
+}
+
+.ayah001,.ayah002, .ayah003, .ayah004, .ayah005, .ayah006, .ayah007, .ayah008, .ayah009, .ayah010 {
+    background-color: indianred;    
+}
+
+.cont {
+    height: 700px;
+    position: relative;
+}
+
+.li {
+    height: inherit;
+}
+
+
+.main {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    width: 20%;
+}
+
+.right {
+    width: 20%;
+} 
+
+.l01 {
+    display:flex;
+    height: 8%;            
+}
+.p01-1 {
+    width: 74%;
+    height: 100%;
+}
+.p02-1 {
+    flex: 1;
+    height: 100%;
+}    
+
+.l02 {
+    display:flex;
+    height: 7.8%;            
+}
+.p01-2 {      
+    width: 27%;
+    height: 100%;
+}
+.p02-2 {      
+    flex: 1;
+    height: 100%;
+}    
+    
+.l03 {
+    display:flex;
+    height: 7.5%;            
+}
+.p01-3 {       
+    width: 39%;
+    height: 100%;
+}
+.p02-3 {      
+    flex: 1;
+    height: 100%;
+}
+
+.l04 {
+    display:flex;
+    height: 7.3%;            
+}
+.p01-4 {       
+    width: 32%;
+    height: 100%;
+}
+.p02-4 {      
+    flex: 1;
+    height: 100%;
+}
+
+.l05 {
+    display:flex;
+    height: 7.7%;            
+}
+.p01-5 {       
+    width: 100%;
+    height: 100%;
+}
+
+.l06 {
+    display:flex;
+    height: 7.9%;            
+}
+.p01-6 {       
+    width: 31%;
+    height: 100%;
+}
+.p02-6 {      
+    flex: 1;
+    height: 100%;
+}
+
+.l07 {
+    display:flex;
+    height: 7.9%;            
+}
+.p01-7 {       
+    width: 100%;
+    height: 100%;
+}
+
+.l08 {
+    display:flex;
+    height: 7.9%;            
+}
+.p01-8 {       
+    width: 100%;
+    height: 100%;
+}
+
+.l09 {
+    display:flex;
+    height: 7.5%;            
+}
+.p01-9 {       
+    width: 89%;
+    height: 100%;
+}
+.p02-9 {      
+    flex: 1;
+    height: 100%;
+}
+
+.l10 {
+    display:flex;
+    height: 7.5%;            
+}
+.p01-10 {       
+    width: 100%;
+    height: 100%;
+}
+
+.l11 {
+    display:flex;
+    height: 7.5%;            
+}
+.p01-11 {       
+    width: 100%;
+    height: 100%;
+}
+
+.l12 {
+    display:flex;
+    height: 7.5%;            
+}
+.p01-12 {       
+    width: 48%;
+    height: 100%;
+}
+.p02-12 {      
+    flex: 1;
+    height: 100%;
+}
+
+.l13 {
+    display:flex;
+    flex: 1;            
+}
+.p01-13 {       
+    width: 100%;
+    height: 100%;
+}
+
+.l14 {
+    display: flex;
+    flex: 1;
+}
+
+.p01-14 {
+    width: 100%;
+    height: 100%;
+}
