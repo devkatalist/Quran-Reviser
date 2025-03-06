@@ -1,7 +1,6 @@
 ﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
-
 //Handle next/previous page
 document.addEventListener("keydown", function (event) {
     const currentUrl = window.location.href; // Get current URL
@@ -41,22 +40,26 @@ document.addEventListener("keydown", function (event) {
 
 //Handle main logic of hiding/showing ayahs
 document.addEventListener("DOMContentLoaded", function () {
-    //data-maxayahs="18" data-ayahsindex="10
+    
     let pageElement = document.getElementById("page-data");
     if (!pageElement) {
         console.warn("Page data not found.");
         return; // Exit if no page data
     }
 
+    //Get constants for each page
     const maxAyahs = parseInt(pageElement.dataset.maxAyahs);
-    let ayahsIndex = parseInt(pageElement.dataset.ayahsIndex);
-
-    //console.log(`Current page max ayahs: ${maxAyahs}, Index: ${ayahsIndex}`);
-    let ispageHidden = true;
+    const minAyahs = parseInt(pageElement.dataset.minAyahs);
+    
 
     document.addEventListener('keydown', function (event) {
 
+        //Page initially hidden
+        let ispageHidden = true;
+
+        //Initialize variables
         const ayahDivs = document.querySelectorAll('div[class*="ayah"]');
+        let ayahsIndex = minAyahs;
 
         //Delete resets progress (all ayahs are hidden)
         if (event.key === 'Delete') {            
@@ -77,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
 
+        //Down arrow reveals ayah
         if (event.key === 'ArrowDown') {
             event.preventDefault();
             if (ayahsIndex <= maxAyahs - 1 || !ispageHidden) {
@@ -84,25 +88,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 const className = `.ayah${String(ayahsIndex).padStart(3, '0')}`;
 
                 const targetDivs = document.querySelectorAll(className);
-                console.log('Down pressed. Ayahs Index is now', ayahsIndex);
 
                 targetDivs.forEach(element => {
                     element.style.backgroundColor = 'transparent';
                 });
+                console.log('Down pressed. Ayahs Index is now', ayahsIndex);
             }
         }
+
+        //Up arrow hides ayah
         if (event.key === 'ArrowUp') {
             event.preventDefault();
             console.log('Up pressed. Ayahs Index is now', ayahsIndex);
-            if (ayahsIndex > 0) {
+            if (ayahsIndex > minAyahs) {
                 const className = `.ayah${String(ayahsIndex).padStart(3, '0')}`;
                 const targetDivs = document.querySelectorAll(className);
                 if (targetDivs) {
                     targetDivs.forEach(element => {
                         element.style.backgroundColor = '#ffffff';
                     });
-                }
                 ayahsIndex--;
+                }
             }
         }
 
