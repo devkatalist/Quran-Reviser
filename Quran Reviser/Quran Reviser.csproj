@@ -7,8 +7,4 @@
     <RootNamespace>Quran_Reviser</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\QuranImages\" />
-  </ItemGroup>
-
 </Project>

@@ -1,0 +1,245 @@
+﻿/*Dummy code to adjust ayahs div sizes when first creating page */
+    
+/*.ayah011 {
+    background-color: lightblue;
+    opacity: 0.5;
+}
+
+.ayah012 {
+    background-color: lightpink;
+    opacity: 0.5;
+}
+
+.ayah013 {
+    background-color: lightgreen;
+    opacity: 0.5;
+}
+
+.ayah014 {
+    background-color: lightblue;
+    opacity: 0.5;
+}
+
+.ayah015 {
+    background-color: lightpink;
+    opacity: 0.5;
+}
+
+.ayah016 {
+    background-color: lightgreen;
+    opacity: 0.5;
+}
+
+.ayah017 {
+    background-color: lightblue;
+    opacity: 0.5;
+}
+
+.ayah018 {
+    background-color: lightpink;
+    opacity: 0.5;
+}*/
+
+
+.overlay {
+    direction: rtl;
+    position: absolute;    
+    width: auto;
+    top: 4%;
+    bottom: 5.5%;
+    left: 4%;
+    right: 4%;
+    z-index: 1;
+}
+
+.ayah001, .ayah002, .ayah003, .ayah004, .ayah005, .ayah006, .ayah007, .ayah008, .ayah009, .ayah010 {
+    background-color: white;
+    opacity: 1;
+}
+
+
+
+
+.cont {
+    height: 690px;
+    position: relative;
+    z-index: -2;
+}
+
+.li {
+    height: inherit;
+}
+
+
+.main {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    width: 20%;
+}
+
+.right {
+    width: 20%;
+}
+
+.l01 {
+    display: flex;
+    height: 6.3%;
+}
+
+.p01-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.l02 {
+    display: flex;
+    height: 7%;
+}
+
+.p01-2 {
+    width: 87.1%;
+    height: 100%;
+}
+
+.p02-2 {
+    flex: 1;
+    height: 100%;
+}
+
+.l03 {
+    display: flex;
+    height: 6.5%;
+}
+
+.p01-3 {
+    width: 100%;
+    height: 100%;
+}
+
+.l04 {
+    display: flex;
+    height: 7%;
+}
+
+            .p01-4 {
+                width: 31%;
+                height: 100%;
+            }
+            .p02-4 {
+                flex: 1;
+                height: 100%;
+            }
+.l05 {
+    display: flex;
+    height: 6.5%;
+}
+            .p01-5 {
+                width: 100%;
+                height: 100%;
+            }
+.l06 {
+    display: flex;
+    height: 6.5%;
+}
+            .p01-6 {
+                width: 30.5%;
+                height: 100%;
+            }
+            .p02-6 {
+                flex: 1;
+                height: 100%;
+            }
+.l07 {
+    display: flex;
+    height: 6.5%;
+}
+        .p01-7 {
+            width: 100%;
+            height: 100%;
+        }
+.l08 {
+    display: flex;
+    height: 7.19%;
+}
+        .p01-8 {
+            width: 100%;
+            height: 100%;
+        }
+.l09 {
+    display: flex;
+    height: 7%;
+}
+            .p01-9 {
+                width: 40%;
+                height: 100%;
+            }
+            .p02-9 {
+                flex: 1;
+                height: 100%;
+            }
+.l10 {
+    display: flex;
+    height: 6%;
+}
+            .p01-10 {
+                width: 100%;
+                height: 100%;
+            }
+.l11 {
+    display: flex;
+    height: 6.5%;
+}
+            .p01-11 {
+                width: 56%;
+                height: 100%;
+            }
+            .p02-11 {
+                flex: 1;
+                height: 100%;
+            }
+.l12 {
+    display: flex;
+    height: 7.5%;
+}
+            .p01-12 {
+                width: 100%;
+                height: 100%;
+            }
+
+.l13 {
+    display: flex;
+    height: 6.5%;
+}
+            .p01-13 {
+                width: 45%;
+                height: 100%;
+            }
+            .p02-13 {
+                width: 100%;
+                height: 100%;
+            }
+.l14 {
+    display: flex;
+    height: 6%;
+}
+            .p01-14 {
+                width: 67.7%;
+                height: 100%;
+            }
+
+            .p02-14 {
+                flex: 1;
+                height: 100%;
+            }
+.l15 {
+    display: flex;
+    height: 7.5%;
+}
+            .p01-15 {
+                width: 100%;
+                height: 100%;
+            }

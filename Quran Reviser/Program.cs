@@ -22,6 +22,6 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-app.MapGet("/", () => Results.Redirect("/QuranPages/page411"));
+app.MapGet("/", () => Results.Redirect("/QuranPages/page412"));
 
 app.Run();
