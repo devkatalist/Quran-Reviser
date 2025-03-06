@@ -52,7 +52,7 @@
     z-index: 1;
 }
 
-.ayah001, .ayah002, .ayah003, .ayah004, .ayah005, .ayah006, .ayah007, .ayah008, .ayah009, .ayah010 {
+.ayah011, .ayah012, .ayah013, .ayah014, .ayah015, .ayah016, .ayah017, .ayah018 {
     background-color: white;
     opacity: 1;
 }
@@ -85,41 +85,36 @@
     width: 20%;
 }
 
+/*Lines start here*/
 .l01 {
     display: flex;
     height: 6.3%;
 }
-
-.p01-1 {
-    width: 100%;
-    height: 100%;
-}
-
+            .p01-1 {
+                width: 100%;
+                height: 100%;
+            }
 .l02 {
     display: flex;
     height: 7%;
 }
+            .p01-2 {
+                width: 87.1%;
+                height: 100%;
+            }
 
-.p01-2 {
-    width: 87.1%;
-    height: 100%;
-}
-
-.p02-2 {
-    flex: 1;
-    height: 100%;
-}
-
+            .p02-2 {
+                flex: 1;
+                height: 100%;
+            }
 .l03 {
     display: flex;
     height: 6.5%;
 }
-
-.p01-3 {
-    width: 100%;
-    height: 100%;
+            .p01-3 {
+                width: 100%;
+                height: 100%;
 }
-
 .l04 {
     display: flex;
     height: 7%;

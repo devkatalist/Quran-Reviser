@@ -5,11 +5,13 @@ let ayahsIndex = 10;
 let ispageHidden = true;
 
 document.addEventListener('keydown', function (event) {
+    console.log("Key pressed:", event.key);
 
     const ayahDivs = document.querySelectorAll('div[class*="ayah"]');
 
     //Delete resets progress
     if (event.key === 'Delete') {
+        console.log('You pressed Delete.');
         ayahDivs.forEach(function (div) {
             div.style.backgroundColor = '#ffffff';
             ayahsIndex = 10;
@@ -19,6 +21,7 @@ document.addEventListener('keydown', function (event) {
 
     //Spacebar reveals page
     if (event.key === ' ') {
+        console.log("You pressed spacebar.");
         event.preventDefault();
         ayahDivs.forEach(function (div) {
             div.style.backgroundColor = 'transparent';
@@ -29,12 +32,12 @@ document.addEventListener('keydown', function (event) {
 
     if (event.key === 'ArrowDown') {
         event.preventDefault();
+        console.log("You pressed down.");
         if (ayahsIndex <= maxAyahs - 1 || !ispageHidden) {
             ayahsIndex++;
             const className = `.ayah${String(ayahsIndex).padStart(3, '0')}`;
 
             const targetDivs = document.querySelectorAll(className);
-            console.log("You pressed down.");
             console.log('Pressed down', ayahsIndex, targetDivs);
 
             targetDivs.forEach(element => {

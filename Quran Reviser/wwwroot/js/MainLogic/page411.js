@@ -1,7 +1,9 @@
 ﻿//This is to be changed for every page
-const maxAyahs = 10;
 
+
+const maxAyahs = 10;
 let ayahsIndex = 0;
+
 let ispageHidden = true;
 
 document.addEventListener('keydown', function (event) {
@@ -9,7 +11,7 @@ document.addEventListener('keydown', function (event) {
     const ayahDivs = document.querySelectorAll('div[class*="ayah"]');
 
     //Delete resets progress
-    if (event.key === 'Delete') {
+    if (event.key === 'Delete') {        
         ayahDivs.forEach(function (div) {
             div.style.backgroundColor = '#ffffff';
             ayahsIndex = 0;
