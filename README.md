@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="128" align="center" src="images/TealSelect.png">
+  <img width="128" align="center" src="Quran Reviser/wwwroot/logo.png">
 </p>
 <h1 align="center">
   Quran Reviser
@@ -14,7 +14,6 @@
 </p>
 
 ### Overview
-![All Modes In Light Mode](images/All-Modes-Light.png)
 
 This is a website that lets you revise the Holy Quran whenever there is no one around to help you.
 
