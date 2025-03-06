@@ -9,7 +9,7 @@
 </p>
 <p align="center">
   <a href="https://www.microsoft.com/en-us/p/text-grab/9mznkqj7sl0b?cid=TextGrabGitHub" target="_blank">
-    <img src="images/storeBadge.png" width="200" alt="Store link" />
+    <img src="Quran Reviser/wwwroot/logo.png" width="200" alt="Store link" />
   </a>
 </p>
 
